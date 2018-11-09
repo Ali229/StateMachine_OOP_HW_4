@@ -3,9 +3,9 @@ public class ShopContextStateFactory {
         assert context != null;
         assert context.getShop() != null;
 
-        ShopState.Status tripStateStatus = context.getShop().getShopStateStatus();
+        ShopState.Status shopStateStatus = context.getShop().getShopStateStatus();
 
-        switch (tripStateStatus) {
+        switch (shopStateStatus) {
             case Create:
                 return new ShopStateCreate(context);
 
@@ -14,15 +14,18 @@ public class ShopContextStateFactory {
 
             case ChoosePaymentMethod:
                 return new ShopStateChoosePaymentMethod(context);
-//
-//            case AddThankYou:
-//                return new ShopStateAddThankYou(context);
-//
-//            case Complete:
-//                return new ShopStateComplete(context);
+
+            case PayCash:
+                return new ShopStateAcceptPaymentCash(context);
+
+            case PayCheck:
+                return new ShopStateAcceptPaymentCheck(context);
+
+            case ShowReceipt:
+                return new ShopStateShowReceipt(context);
 
             default:
-                throw new Exception(tripStateStatus + " is an invalid state");
+                throw new Exception(shopStateStatus + " is an invalid state");
         }
     }
 }

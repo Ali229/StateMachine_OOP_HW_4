@@ -12,10 +12,7 @@ public class ShopStateLoop {
         while (shopContext.execute() == Status.Continue)
         {
         }
-
-        System.out.println(System.lineSeparator());
         System.out.println("*** ShopStateLoop.Status.Stopped ***");
-        System.out.println(System.lineSeparator());
 
         return shopContext.getShop();
     }

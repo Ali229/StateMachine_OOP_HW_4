@@ -8,12 +8,13 @@ public class ShopStateAcceptPaymentCash extends ShopState {
         super(context, Status.PayCash);
     }
 
-    private Double getTotal() {
-        double total = 0.0;
+    private BigDecimal getTotal() {
+        BigDecimal total = new BigDecimal(0);
         List<String> _quantity = getShopContext().getShop().getQuantities();
         List<String> _prices = getShopContext().getShop().getPrices();
         for (int x = 0; x < _quantity.size(); x++) {
-            total += Double.parseDouble(_quantity.get(x)) * Double.parseDouble(_prices.get(x));
+            double calc = Double.parseDouble(_quantity.get(x)) * Double.parseDouble(_prices.get(x));
+            total = total.add(new BigDecimal(calc, MathContext.DECIMAL64));
         }
         return total;
     }
@@ -24,12 +25,12 @@ public class ShopStateAcceptPaymentCash extends ShopState {
         System.out.println("Your total is $" + getTotal());
         Scanner input = new Scanner(System.in);
         System.out.println("Enter amount");
-        String cashIn = input.nextLine().trim();
-        getShopContext().getShop().setPayment(new PaymentCash(BigDecimal.valueOf(Double.parseDouble(cashIn))));
-        while (!getShopContext().getShop().getPayment().getAmount().equals(new BigDecimal(getTotal(), MathContext.DECIMAL64))) {
+        BigDecimal cashIn = input.nextBigDecimal();
+        getShopContext().getShop().setPayment(new PaymentCash(cashIn));
+        while (!(getShopContext().getShop().getPayment().getAmount().equals(getTotal()))) {
             System.out.println("Invalid cash input, input cash again!");
-            cashIn = input.nextLine().trim();
-            getShopContext().getShop().setPayment(new PaymentCash(BigDecimal.valueOf(Double.parseDouble(cashIn))));
+            cashIn = input.nextBigDecimal();
+            getShopContext().getShop().setPayment(new PaymentCash(cashIn));
         }
 
         getShopContext().changeState(new ShopStateShowReceipt(getShopContext()));
