@@ -15,7 +15,7 @@ public class Main {
             return;
         }
 
-
+//
         while (true) {
             showCart(shop);
             System.out.println();
