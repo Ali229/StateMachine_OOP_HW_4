@@ -14,8 +14,7 @@ public class Main {
             System.out.println(ex.getMessage());
             return;
         }
-
-        while (true) {
+        while (!(shop.getShopStateStatus().equals(ShopState.Status.ShowReceipt))) {
             showCart(shop);
             System.out.println();
             System.out.println("Simulate shop reload to correct state? [yes]");
@@ -34,8 +33,6 @@ public class Main {
     }
 
     private static void showCart(Shop shop) {
-        System.out.println("Order " + shop.getOrderId() + " is not complete - cannot produce order yet");
         System.out.println("Order " + shop.getOrderId() + " state = " + shop.getShopStateStatus());
-        System.out.println();
     }
 }

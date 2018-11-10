@@ -9,6 +9,7 @@ public class Shop {
     private List<String> _price;
     private Payment _payment;
     private ShopState.Status _shopStateStatus;
+    public boolean shopEnded = false;
 
     public Shop() {
         _shopStateStatus = ShopState.Status.Create;
