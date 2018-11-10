@@ -28,7 +28,7 @@ public class ShopStateAcceptPaymentCash extends ShopState {
         BigDecimal cashIn = input.nextBigDecimal();
         getShopContext().getShop().setPayment(new PaymentCash(cashIn));
         while (!(getShopContext().getShop().getPayment().getAmount().equals(getTotal()))) {
-            System.out.println("Invalid cash input, input cash again!");
+            System.out.println("Invalid cash input, it should be exact amount!");
             cashIn = input.nextBigDecimal();
             getShopContext().getShop().setPayment(new PaymentCash(cashIn));
         }
