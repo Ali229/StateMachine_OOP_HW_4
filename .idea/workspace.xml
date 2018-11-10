@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5e3ae14-d09e-47f5-a559-a67bc6159a22" name="Default Changelist" comment="Fixed newLines">
+    <list default="true" id="d5e3ae14-d09e-47f5-a559-a67bc6159a22" name="Default Changelist" comment="Update out folder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StateMachine/ShopStateAddItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StateMachine/ShopStateAddItems.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StateMachine/ShopStateChoosePaymentMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StateMachine/ShopStateChoosePaymentMethod.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StateMachine/ShopStateCreate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StateMachine/ShopStateCreate.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,13 +35,13 @@
         <counts>
           <entry key="dummy" value="14" />
           <entry key="java" value="2322" />
-          <entry key="txt" value="82" />
+          <entry key="txt" value="107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="2322" />
-          <entry key="PLAIN_TEXT" value="96" />
+          <entry key="PLAIN_TEXT" value="121" />
         </counts>
       </usages-collector>
     </session>
@@ -145,7 +142,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541812364572" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541812917764" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/CSharpToJavaStateDemo" />
   </component>
   <component name="RecentsManager">
@@ -247,14 +244,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541812293761</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update out folder">
+      <created>1541812442276</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1541812442276</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27359000" />
+    <option name="totallyTimeSpent" value="27726000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26644295" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -297,7 +301,8 @@
     <MESSAGE value="test github" />
     <MESSAGE value="Cash working" />
     <MESSAGE value="Fixed newLines" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed newLines" />
+    <MESSAGE value="Update out folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update out folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
