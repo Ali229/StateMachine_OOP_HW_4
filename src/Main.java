@@ -30,6 +30,16 @@ public class Main {
                 break;
             }
         }
+
+        if (shop.getShopStateStatus().equals(ShopState.Status.ShowReceipt)) {
+            System.out.println("Would you like to make another purchase?");
+            System.out.println("- COMMAND: [yes] to make another purchase, [no] to exit");
+            String answer = scanner.nextLine();
+            if (answer.equals("yes")) {
+                String[] repeat = new String[0];
+                main(repeat);
+            }
+        }
     }
 
     private static void showCart(Shop shop) {
