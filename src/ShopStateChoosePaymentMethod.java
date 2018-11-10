@@ -8,7 +8,6 @@ public class ShopStateChoosePaymentMethod extends ShopState {
 
     @Override
     public ShopStateLoop.Status execute() {
-        System.out.println(System.lineSeparator());
         System.out.println("*** CHOOSE PAYMENT METHOD ***");
         System.out.println();
         System.out.println("- COMMAND: [later] to return later, [cash] or [check]");

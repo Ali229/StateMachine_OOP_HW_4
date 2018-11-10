@@ -83,7 +83,7 @@ public class ShopStateAddItems extends ShopState {
                     }
                     getShopContext().getShop().getPrices().add(price);
 
-                    System.out.println("- Added item [" + newItem + "]");
+                    System.out.println("- Added item [" + newItem + "] - Enter more or enter done");
                 }
 
             } else {

@@ -15,7 +15,6 @@ public class ShopStateCreate extends ShopState {
 
     @Override
     public ShopStateLoop.Status execute() {
-        System.out.println();
         System.out.println("*** NEW ORDER CREATED ***");
         getShopContext().changeState(new ShopStateAddItems(getShopContext()));
 
